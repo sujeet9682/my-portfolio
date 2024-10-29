@@ -6,6 +6,7 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Contributions from './pages/Contributions'
 import Articles from './pages/Articles'
+import SingleProject from './pages/SingleProject';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
       element: <Layout />, // This layout includes the Sidebar
       children: [
         {
-          path: "/",
+          index: true,
           element: <Home />, // Home page component
         },
         {
@@ -34,8 +35,13 @@ function App() {
           path: "/blog",
           element: <Articles />, // About page component
         },
+        {
+          path: "/products/:slug",
+          element: <SingleProject />
+        }
       ],
-    }
+    },
+    
   ])
 
   return (

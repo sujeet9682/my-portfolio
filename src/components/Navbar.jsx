@@ -93,9 +93,9 @@ const Navbar = () => {
     const [open, setOpen] = useState(isMobile() ? false : true);
 
     return (
-        <div>
+        <div className='text-white'>
             <button
-                className="fixed top-4 left-0 h-8 w-8 bg-gray-800 text-cyan-950 rounded-r-lg flex items-center justify-center z-50"
+                className="fixed top-4 left-0 h-8 w-8 bg-gray-800 text-white rounded-r-lg flex items-center justify-center z-50"
                 onClick={() => setOpen(!open)}
             >
                 <FaArrowRightArrowLeft className="h-4 w-4 text-secondary" />
@@ -106,7 +106,7 @@ const Navbar = () => {
                     animate={{ x: 0 }}
                     transition={{ duration: 0.2, ease: "linear" }}
                     exit={{ x: -200 }}
-                    className="px-6   py-10 bg-gray-950 max-w-[14rem] lg:w-fit  fixed lg:relative  h-screen left-0 flex flex-col justify-between"
+                    className="px-6 z-10  py-10 bg-gray-950 max-w-[14rem] lg:w-fit  fixed lg:relative  h-screen left-0 flex flex-col justify-between"
                 >
                     {/* <div className=""> */}
                     <SidebarHeader />

@@ -8,7 +8,7 @@ const Layout = () => {
         <div
         className="flex antialiased h-screen overflow-hidden bg-gray-950">
             <Sidebar />
-            <div className="flex-1  h-screen overflow-auto">
+            <div className="flex-1  h-screen overflow-auto mx-7">
                 <Outlet /> {/* This renders the current route's component */}
             </div>
         </div>

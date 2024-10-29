@@ -11,19 +11,13 @@ const Home = () => {
   return (
     <PagesContainer>
       <span className="text-4xl">👋</span>
-      <Heading className="font-black">Hello there! I&apos;m Sujeet</Heading>
-      <Paragraph className="max-w-xl mt-4">
+      <Heading className="font-black text-white">Hello there! I&apos;m Sujeet</Heading>
+      <Paragraph className="max-w-xl mt-4 text-white">
         I&apos;m a full-stack developer that loves
-        <Highlight>building products</Highlight> and web apps that can impact
-        millions of lives
-      </Paragraph>
-      <Paragraph className="max-w-xl mt-4">
-        I have been building scalable web apps that are performance optimised and stunning design for
-        <Highlight>more than 2 years now</Highlight>
+        <Highlight>building projects</Highlight> 
       </Paragraph>
 
-      
-      <Heading className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4">
+      <Heading className="font-black text-lg md:text-lg lg:text-lg text-white mt-20 mb-4">
         What I&apos;ve been working on
       </Heading>
       <Products />

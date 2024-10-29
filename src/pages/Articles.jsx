@@ -32,12 +32,12 @@ const Articles = () => {
     return (
         <PagesContainer>
             <span className="text-4xl">📝</span>
-            <Heading className="font-black pb-4">I write about technology</Heading>
-            <Paragraph className="pb-10">
+            <Heading className="font-black text-white pb-4">I write about technology</Heading>
+            <Paragraph className="pb-10 text-white">
                 Ever since <Highlight> I was a kid</Highlight>, I&apos;ve been
                 fascinated by technology.
             </Paragraph>
-            <div className="max-w-5xl mx-auto my-10">
+            <div className="max-w-5xl mx-auto my-10 text-white">
                 {blogs.map((blog, index) => (
                     <motion.div
                         key={blog.slug}

@@ -1,16 +1,16 @@
 
 export const products = [
   {
-    href: "https://github.com/ankur1493/clan_chat",
-    title: "Clan Chat",
+    href: "https://github.com/sujeet9682",
+    title: "e-commerce store",
     description:
       "A chat application inspired by discord with chat/audio/video call functionality",
-    thumbnail: "/images/clanChat.png",
+    thumbnail: "/public/commerce.png",
     images: [
-      "/images/clanChat.png",
-      "/images/clanChat1.png",
+      "/public/commerce.png",
+      "/public/commerce.png",
     ],
-    stack: ["Nextjs", "Web-sockets", "WebRTC", "Express", "Typescript", "PostgreSQL", "MongoDB", "Redis"],
+    stack: ["JavaScript"],
     slug: "clan_chat",
     label: "github",
     content: (
@@ -38,16 +38,16 @@ export const products = [
     ),
   },
   {
-    href: "https://github.com/ankur1493/calenso",
-    title: "Calenso",
+    href: "https://github.com/sujeet9682",
+    title: "clickart-frontend",
     description:
       "A scheduling infrastructure for everyone, because your time matters, so let us handle meetings ",
-    thumbnail: "/images/calenso1.png",
+    thumbnail: "/public/clickcart.jpg",
     images: [
-      "/images/calenso.png",
-      "/images/calenso1.png",
+      "/public/clickcart.jpg",
+      "/public/clickcart.jpg",
     ],
-    stack: ["ReactJs", "Tailwindcss", "Redux Toolkit", "Express", "MongoDB"],
+    stack: ["JavaScript", "HTML", "CSS"],
     slug: "calenso",
 
     label: "github",
@@ -69,19 +69,19 @@ export const products = [
     ),
   },
   {
-    href: "https://encrypto-nine.vercel.app/",
-    title: "Encrypto",
+    href: "https://github.com/sujeet9682",
+    title: "Spending Tracker",
     description:
       "A dashboard to track your favourite crypto",
-    thumbnail: "/images/encrypto.png",
+    thumbnail: "/public/spending.png",
     images: [
-      "/images/encrypto.png",
-      "/images/encrypto1.png",
+      "/public/spending.png",
+      "/public/spending.png",
     ],
-    stack: ["Nextjs", "Tailwindcss", "Auth.js", "React Charts"],
+    stack: ["Java", "mysql"],
     slug: "encrypto",
 
-    label: "live",
+    label: "github",
     content: (
       <div>
         <p>

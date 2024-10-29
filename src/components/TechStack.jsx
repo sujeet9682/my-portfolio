@@ -2,9 +2,9 @@ import React from "react";
 import { Heading } from "../components/Heading"
 
 export const TechStack = () => {
-  const stack = ["NextJs", "ReactJs", "ExpressJS", "PostgreSQL", "Redis", "MongoDB", "Typescript", "Golang", "Docker", "AWS", "Github", "TRPC"];
+  const stack = [ "ReactJs","Springboot", "Git", "Github","Mysql"];
   return (
-    <div>
+    <div className="text-white">
       <Heading
         as="h2"
         className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"

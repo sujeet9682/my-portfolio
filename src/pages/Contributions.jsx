@@ -18,7 +18,7 @@ const Contributions = () => {
     ];
 
   return (
-    <div className="max-w-5xl mx-auto my-10">
+    <div className="max-w-5xl mx-auto my-10 text-white">
       {contributions.map((contribution, index) => (
         <motion.div
           key={contribution.index}

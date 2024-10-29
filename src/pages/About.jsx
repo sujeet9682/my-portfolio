@@ -20,49 +20,47 @@ const About = () => {
   return (
     <PagesContainer>
       <span className="text-4xl">💬</span>
-      <Heading className="font-black">About Me</Heading>
+      <Heading className="text-white">About Me</Heading>
       <Quotes />
       <div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-10 my-10">
-        {images.map((image, index) => (
-          <motion.div
-            key={image}
-            initial={{opacity: 0,y: -50,rotate: 0,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              rotate: index % 2 === 0 ? 3 : -3,
-            }}
-            transition={{ duration: 0.2, delay: index * 0.1 }}
-          >
-            <img
-              src={image}
-              width={200}
-              height={400}
-              alt="about"
-              className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
-            />
-          </motion.div>
-        ))}
-      </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 my-10 text-white">
+          {images.map((image, index) => (
+            <motion.div
+              key={image}
+              initial={{
+                opacity: 0, y: -50, rotate: 0,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                rotate: index % 2 === 0 ? 3 : -3,
+              }}
+              transition={{ duration: 0.2, delay: index * 0.1 }}
+            >
+              <img
+                src={image}
+                width={200}
+                height={400}
+                alt="about"
+                className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
+              />
+            </motion.div>
+          ))}
+        </div>
 
-      <div className="max-w-4xl">
-        <Paragraph className=" mt-4">
-          Hey there, I&apos;m  Ankur Sharma - a passionate developer, avid writer,
-          and a connoisseur of awesome design. Welcome to my corner of the
-          digital world!
-        </Paragraph>
-        <Paragraph className=" mt-4">
-          Since the early days of my journey, I have been captivated by the art
-          of crafting exceptional digital experiences. As a developer,
-          I thrive on turning lines of code into functional and elegant solutions.
-          My goal is to create extensive and scalable backend systems along with smooth UI</Paragraph>
+        <div className="max-w-4xl text-white">
+          <Paragraph className=" mt-4">
+            Hey there, I&apos;m  Sujeet - a passionate developer from India. <br /> Welcome to my corner of the
+            digital world!
+          </Paragraph>
+          <Paragraph className=" mt-4">
+            As a developer,I thrive on turning lines of code into functional and elegant solutions.
+            My goal is to create extensive and scalable backend systems along with smooth UI</Paragraph>
 
-        <Paragraph className=" mt-4">
-          I know <span className="text-yellow-400">{" "}Typescript </span> along with technologies like
-          <span className="text-blue-400">{" "}Next js, React js, Express with databases like Postgress, Mongo db and Redis.
-            I am also comfortable in GraphQL and TRPC</span>.
+          <Paragraph className=" mt-4">
+            I know<span className="text-yellow-400">{" "}JavaScript </span> along with technologies like
+            <span className="text-blue-400">{" "}ReactJS, Spring Boot and MySQL.</span>
+            <span>I am also comfortable in Spring concepts</span>.
         </Paragraph>
         <Paragraph className=" mt-4">
           What sets me apart is my unwavering appreciation for design.
@@ -78,12 +76,12 @@ const About = () => {
           here for you.
         </Paragraph>
         <Paragraph className=" mt-4">
-          if you are looking for someone with great backend understanding with experience in creating smooth UI, Hit me up.
+          if you are looking for someone with passion of coding and creating smooth UI, Hit me up.
           Thanks for reading this and navigating through my creation.
         </Paragraph>
       </div>
     </div>
-    </PagesContainer>
+    </PagesContainer >
   );
 }
 
