@@ -4,11 +4,7 @@ import Quotes from '../components/Quotes';
 import { AnimatePresence, motion } from "framer-motion";
 import { Paragraph } from '../components/Paragraph';
 import { PagesContainer } from '../components/PagesContainer';
-// export const metadata: Metadata = {
-//   title: "About | Ankur Sharma",
-//   description:
-//     "Ankur Sharma is a full stack developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
-// };
+
 
 const About = () => {
   const images = [
@@ -58,15 +54,15 @@ const About = () => {
             My goal is to create extensive and scalable backend systems along with smooth UI</Paragraph>
 
           <Paragraph className=" mt-4">
-            I know<span className="text-yellow-400">{" "}JavaScript </span> along with technologies like
-            <span className="text-blue-400">{" "}ReactJS, Spring Boot and MySQL.</span>
+            I know<em>{" "}JavaScript </em> along with technologies like
+            <em>{" "}ReactJS, Spring Boot and MySQL.</em>
             <span>I am also comfortable in Spring concepts</span>.
         </Paragraph>
         <Paragraph className=" mt-4">
           What sets me apart is my unwavering appreciation for design.
           I believe that aesthetics and usability go hand in hand.
           My eye for awesome design ensures that every project I undertake
-          looks stunning on the surface for that I use <span className="text-blue-400">{" "}Tailwind css and Aeternity UI</span>
+          looks stunning on the surface for that I use <em>{" "}Tailwind css</em>
         </Paragraph>
         <Paragraph className=" mt-4">
           Through this website, I aim to share my insights, experiences, and

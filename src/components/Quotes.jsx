@@ -41,7 +41,7 @@ const Quotes = () => {
 
     return (
         <div>
-            <p className="text-primary text-[20px] h-[24px]">{displayedText}<span className='text-yellow-200'>|</span></p>
+            <p className="text-primary text-white text-[20px] h-[24px]">{displayedText}<span className='text-yellow-200'>|</span></p>
         </div>
     )
 }

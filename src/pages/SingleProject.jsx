@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { products } from "../constants/products";
 
- const SingleProduct = ({ }) => {
+const SingleProduct = ({ }) => {
   const { slug } = useParams();
   const product = products.find((p) => p.slug === slug);
 
@@ -14,21 +14,15 @@ import { products } from "../constants/products";
   const [activeImage, setActiveImage] = useState(product.thumbnail);
 
   return (
-    <div className="py-10 text-white max-w-4xl mx-auto">
+      <div className="py-10 text-white max-w-4xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="relative flex justify-center"
       >
-        <img
-          src={activeImage}
-          alt="thumbnail"
-          height="1000"
-          width="1000"
-          className="rounded-md object-contain"
-        />
-        <div className="absolute bottom-0 bg-white h-40 w-full [mask-image:linear-gradient(to_bottom,transparent,white)]" />
+        <a href={product.live} target="_blank"><img src={activeImage} alt="thumbnail" height="1000" width="1000" className="rounded-md object-contain" /></a>
+      <div className="absolute bottom-0 bg-white h-40 w-full [mask-image:linear-gradient(to_bottom,transparent,white)]" />
       </motion.div>
       <div className="flex flex-row justify-center my-8 flex-wrap">
         {product.images.map((image, idx) => (
@@ -64,9 +58,9 @@ import { products } from "../constants/products";
         href={product.href}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex mt-6 items-center gap-1 group/button rounded-full hover:scale-105 focus:outline-none transition ring-offset-gray-900 bg-gray-800 text-white shadow-lg shadow-black/20 sm:backdrop-blur-sm group-hover/button:bg-gray-50/15 group-hover/button:scale-105 focus-visible:ring-1 focus-visible:ring-offset-2 ring-gray-50/60 text-sm font-medium px-4 py-2 mt-auto origin-left"
+        className="inline-flex items-center gap-1 group/button rounded-full hover:scale-105 focus:outline-none transition ring-offset-gray-900 bg-gray-800 text-white shadow-lg shadow-black/20 sm:backdrop-blur-sm group-hover/button:bg-gray-50/15 group-hover/button:scale-105 focus-visible:ring-1 focus-visible:ring-offset-2 ring-gray-50/60 text-sm font-medium px-4 py-2 mt-3 origin-left"
       >
-        Live Preview
+        Github
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

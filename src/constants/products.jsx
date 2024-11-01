@@ -1,103 +1,96 @@
 
 export const products = [
   {
-    href: "https://github.com/sujeet9682",
+    href: "https://github.com/sujeet9682/E-commerce-website",
     title: "e-commerce store",
     description:
-      "A chat application inspired by discord with chat/audio/video call functionality",
+      "An Engaging E-commerce Frontend Built with HTML, CSS, and JavaScript, Featuring Local Storage",
     thumbnail: "/public/commerce.png",
     images: [
       "/public/commerce.png",
-      "/public/commerce.png",
+      // "/public/commerce.png",
     ],
+    live: "https://clickmystore.netlify.app/",
     stack: ["JavaScript"],
-    slug: "clan_chat",
+    slug: "e-comm",
     label: "github",
     content: (
       <div>
         <p>
-          Clan-Chat is a Discord-like application inspired by a YouTube tutorial on
-          creating a Discord clone using Next.js.
-          Initially, the tutorial utilized Socket.IO and LiveKit
-          for core functionalities. However, I decided to challenge myself by
-          implementing WebSockets and WebRTC to manage real-time communication and live calls.
-        
+          Developed a comprehensive e-commerce frontend using HTML, CSS, and JavaScript, focusing on local storage to ensure
+          data persistence. This project highlights the importance of user data consistency across sessions, allowing cart items
+          to remain intact without relying on a backend database.
         </p>
         <p>
-          Key aspects of the project include:
-
-
-          Real-Time Communication: Implemented using WebSockets for chat functionality.
-          Live Calls: Exploring WebRTC to handle video and voice communication.
-          System Architecture: Designing a multi-server setup to manage different aspects of the application:
-          WebRTC Server: For handling live calls.
-          WebSockets Server: For managing real-time chat.
-          Next.js Application: Handling authentication and user flow.
+          The user interface is enhanced with Font Awesome icons and showToast notifications, providing
+          real-time feedback and creating an engaging shopping experience. The application simulates
+          a real-world e-commerce platform by implementing key functionalities, such as adding items to the cart and simulating
+          the checkout process to reflect modern online shopping behaviors.
+          While the project successfully showcases essential features of an e-commerce store, it currently
+          lacks a checkout page, payment options, user profiles, and backend.
         </p>
+        <em>
+          I welcome contributions and feedback! If you’re interested in collaborating or enhancing this project, please feel free to reach out.
+        </em>
       </div>
     ),
   },
   {
-    href: "https://github.com/sujeet9682",
+    href: "https://github.com/sujeet9682/WebDev-Projects/tree/master/landing%20page%20clickcart",
     title: "clickart-frontend",
     description:
-      "A scheduling infrastructure for everyone, because your time matters, so let us handle meetings ",
+      "User Interface for a Men's Fashion E-commerce Website Using HTML, CSS, and JavaScript",
     thumbnail: "/public/clickcart.jpg",
     images: [
       "/public/clickcart.jpg",
-      "/public/clickcart.jpg",
+      // "/public/clickcart.jpg",
     ],
+    live:"https://liveclickcart.netlify.app/",
     stack: ["JavaScript", "HTML", "CSS"],
-    slug: "calenso",
+    slug: "clickcart",
 
     label: "github",
     content: (
       <div>
         <p>
-          is an Indian open-source alternative platform for calendly and cal. It is a scheduling infrastructure,
-          which enables you to create bookings and appointments, according to the availability set by the user. You can
-          connect your google calendar with calenso and we will take care of everything from creating
-          an event in your calendar to sending you reminder emails for the meeting.
+          Designed a dynamic and responsive user interface for a men's fashion e-commerce website using HTML, CSS,
+          and JavaScript. The project emphasizes creating a seamless shopping experience across different devices,
+          ensuring full responsiveness and integrating Remix Icons for enhanced visual appeal.
         </p>
         <p>
-          Calenso is a comprehensive scheduling tool that allows users
-          to connect their Google Calendar, set up their availability dynamically,
-          and generate a public page for booking appointments.
-          This project included a fully functional backend and an intuitive user interface.
+          The development process involved crafting custom UI elements that adapt to various screen sizes, maintaining a
+          consistent user experience across desktops, tablets, and smartphones. I implemented features tailored to meet customer
+          needs, focusing on visual aesthetics to create an engaging and intuitive shopping environment.
         </p>
       </div>
     ),
   },
   {
-    href: "https://github.com/sujeet9682",
+    href: "https://github.com/sujeet9682/Spending-Tracker",
     title: "Spending Tracker",
     description:
-      "A dashboard to track your favourite crypto",
+      "Effortlessly Manage Your Expenditure with a Spending Tracker Application.",
     thumbnail: "/public/spending.png",
     images: [
       "/public/spending.png",
-      "/public/spending.png",
+      // "/public/spending.png",
     ],
+    live:"",
     stack: ["Java", "mysql"],
-    slug: "encrypto",
+    slug: "spending_tracker",
 
     label: "github",
     content: (
       <div>
         <p>
-          Encrypto is a platform I build to help
-          users who invest in crypto to show them the
-          past data of there desired cryptocurrency along with real time updates.
-          User is able select different coins as per there want.
+          I developed a spending tracker application using Java and MySQL to help users manage their personal finances effectively.
+          The user-friendly interface allows individuals to add and categorize expenses, track monthly spending, and view total
+          expenditures.
         </p>
         <p>
-          Exercitation pariatur enim occaecat adipisicing nostrud adipisicing
-          Lorem tempor ullamco exercitation quis et dolor sint. Adipisicing sunt
-          sit aute fugiat incididunt nostrud consequat proident fugiat id.
-          Officia aliquip laborum labore eu culpa dolor reprehenderit eu ex enim
-          reprehenderit. Cillum Lorem veniam eu magna exercitation.
-          Reprehenderit adipisicing minim et officia enim et veniam Lorem
-          excepteur velit adipisicing et Lorem magna.
+          Users can customize expense categories, gain insights into their spending habits, and tailor the application to their needs
+          by adding or deleting categories. With a focus on usability and efficiency, this application serves as an essential tool for
+          anyone looking to take control of their finances and make informed decisions about their spending.
         </p>
       </div>
     ),

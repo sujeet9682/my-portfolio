@@ -1,7 +1,7 @@
 import React from 'react'
 import { twMerge } from "tailwind-merge";
 
-export const Heading = ({className,children,as}) => {
+export const Heading = ({className,children}) => {
     return (
         <h3
           className={twMerge(

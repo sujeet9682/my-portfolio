@@ -1,44 +1,44 @@
 export const contributions = [
   {
     index: 1,
-    title: "Rate Limiting submission using Redis",
-    org: "Algorethimic Arena",
+    title: "It started with, adding a frontend-landingPage in an open source Repo",
+    org: "WebDev-OpenSource",
     status: "Merged",
-    link: "https://github.com/code100x/algorithmic-arena/pull/8"
+    link: "https://github.com/rudra016/WebDev-OpenSource/pull/178"
   },
   {
     index: 2,
-    title: "Organization Profile Setup Page",
-    org: "Uninbox",
+    title: "Enhanced UI Stability by Resolving Text Field Displacement Bug",
+    org: "Resume-maker",
     status: "Merged",
-    link: "https://github.com/un/inbox/pull/443"
+    link: "https://github.com/koalalu007/resume-maker/pull/40"
   },
   {
     index: 3,
-    title: "Docker setup to run project locally",
-    org: "Algorethimic Arena",
+    title: "Optimized Header Functionality and Layout for Improved User Experience",
+    org: "Eventmint",
     status: "Merged",
-    link: "https://github.com/code100x/algorithmic-arena/pull/21"
+    link: "https://github.com/samyakmaitre/eventmint/pull/450"
   },
   {
     index: 4,
-    title: "Created the settings sidebar",
-    org: "Uninbox",
+    title: "Enhanced Navbar Responsiveness and Dynamic Item Management for Login/Signup",
+    org: "ML Fusion Lab",
     status: "Merged",
-    link: "https://github.com/un/inbox/pull/419"
+    link: "https://github.com/GarimaSingh0109/Resum-Resume/pull/883"
   },
   {
     index: 5,
-    title: "SQL and PlanetScale Container",
-    org: "Cap",
+    title: "Added Navbar, Header, and Footer for Enhanced Navigation and UI Consistency",
+    org: "Eventmint",
     status: "Open",
-    link: "https://github.com/CapSoftware/Cap/pull/36"
+    link: "https://github.com/samyakmaitre/eventmint/pull/480"
   },
   {
     index: 6,
-    title: "Searching and Filter Problems functionality",
-    org: "Algorethimic Arena",
+    title: "Introduced Movie Page with Carousel and Functional Routing in application",
+    org: "Eventmint",
     status: "Open",
-    link: "https://github.com/code100x/algorithmic-arena/pull/30"
+    link: "https://github.com/samyakmaitre/eventmint/pull/479"
   },
 ]

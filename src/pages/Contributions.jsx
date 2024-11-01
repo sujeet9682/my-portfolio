@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import { Link, Router, } from 'react-router-dom';
 import { Heading } from "../components/Heading";
 import { AnimatePresence, motion } from "framer-motion";
-import {contributions} from "../constants/contributions"
+import { contributions } from "../constants/contributions"
 import { FaArrowRight } from "react-icons/fa6";
 
 const Contributions = () => {
-    const [hovered, setHovered] = useState(null);
+  const [hovered, setHovered] = useState(null);
 
-    const images = [
-      "https://images.unsplash.com/photo-1675855547764-2b29a996824f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1516801967339-cb50a3ce7781?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1484662020986-75935d2ebc66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1445966838217-f418f2601b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1719937206168-f4c829152b91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    ];
+  const images = [
+    "https://imgs.search.brave.com/etUEGWVI_kR3k09ibXJ-8Z4RDPOYd4_gwIq4H5Xzdzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXBv/c2l0b3J5LWltYWdl/cy5naXRodWJ1c2Vy/Y29udGVudC5jb20v/NzgzMDAyMzgwLzNl/MmUwZTY3LTlhNmIt/NDdjMC1hOTUzLWYx/ZmU1YjZlNzUzOQ",
+    "https://imgs.search.brave.com/etUEGWVI_kR3k09ibXJ-8Z4RDPOYd4_gwIq4H5Xzdzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXBv/c2l0b3J5LWltYWdl/cy5naXRodWJ1c2Vy/Y29udGVudC5jb20v/NzgzMDAyMzgwLzNl/MmUwZTY3LTlhNmIt/NDdjMC1hOTUzLWYx/ZmU1YjZlNzUzOQ",
+    "https://imgs.search.brave.com/etUEGWVI_kR3k09ibXJ-8Z4RDPOYd4_gwIq4H5Xzdzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXBv/c2l0b3J5LWltYWdl/cy5naXRodWJ1c2Vy/Y29udGVudC5jb20v/NzgzMDAyMzgwLzNl/MmUwZTY3LTlhNmIt/NDdjMC1hOTUzLWYx/ZmU1YjZlNzUzOQ",
+    "https://imgs.search.brave.com/etUEGWVI_kR3k09ibXJ-8Z4RDPOYd4_gwIq4H5Xzdzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXBv/c2l0b3J5LWltYWdl/cy5naXRodWJ1c2Vy/Y29udGVudC5jb20v/NzgzMDAyMzgwLzNl/MmUwZTY3LTlhNmIt/NDdjMC1hOTUzLWYx/ZmU1YjZlNzUzOQ",
+    "https://imgs.search.brave.com/etUEGWVI_kR3k09ibXJ-8Z4RDPOYd4_gwIq4H5Xzdzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXBv/c2l0b3J5LWltYWdl/cy5naXRodWJ1c2Vy/Y29udGVudC5jb20v/NzgzMDAyMzgwLzNl/MmUwZTY3LTlhNmIt/NDdjMC1hOTUzLWYx/ZmU1YjZlNzUzOQ",
+    "https://imgs.search.brave.com/etUEGWVI_kR3k09ibXJ-8Z4RDPOYd4_gwIq4H5Xzdzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXBv/c2l0b3J5LWltYWdl/cy5naXRodWJ1c2Vy/Y29udGVudC5jb20v/NzgzMDAyMzgwLzNl/MmUwZTY3LTlhNmIt/NDdjMC1hOTUzLWYx/ZmU1YjZlNzUzOQ",
+  ];
 
   return (
     <div className="max-w-5xl mx-auto my-10 text-white">

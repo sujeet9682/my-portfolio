@@ -39,8 +39,6 @@ const Navigation = ({ setOpen }) => {
                         )}
                     />
                     <span>{link.label}</span>
-                    {/* end.................. */}
-
                 </Link>
             ))}
 
@@ -72,7 +70,7 @@ const Navigation = ({ setOpen }) => {
 
 const SidebarHeader = () => {
     return (
-        <div className="flex space-x-2 py-8">
+        <Link to="/" className="flex space-x-2 py-8">
             <img
                 src="/sj.png"
                 alt="Avatar"
@@ -84,7 +82,7 @@ const SidebarHeader = () => {
                 <p className="font-bold text-primary">Sujeet Gupta</p>
                 <p className="font-light text-secondary">Developer</p>
             </div>
-        </div>
+        </Link>
     );
 };
 
@@ -108,7 +106,6 @@ const Navbar = () => {
                     exit={{ x: -200 }}
                     className="px-6 z-10  py-10 bg-gray-950 max-w-[14rem] lg:w-fit  fixed lg:relative  h-screen left-0 flex flex-col justify-between"
                 >
-                    {/* <div className=""> */}
                     <SidebarHeader />
                     <Navigation setOpen={setOpen} />
                     {/* </div> */}
