@@ -13,9 +13,9 @@ const Articles = () => {
     const blogs = [
         {
             title: "How I learned git and github",
-            slug: "HILGG",
-            link: "https://ankur25.hashnode.dev/how-i-learned-git-and-github",
-            image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1670145491130/z-V8lDnI_.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+            slug: "my_git_experience",
+            link: "https://sujeet-hash.hashnode.dev/my-journey-to-learning-git-and-github",
+            image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1730474761240/10008059-5588-489b-8570-2214b4fdd02e.avif?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
             date: "",
             description: "How I learned git and github, as they are one of the major tools any software engineer should learn"
         },
@@ -45,7 +45,7 @@ const Articles = () => {
                     >
                         <Link
                             key={`blog-${blog.title}`}
-                            href={blog.link}
+                            to={blog.link}
                             target="_blank"
                             className="relative my-10 block"
                             onMouseEnter={() => setHovered(blog.slug)}
