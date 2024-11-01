@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useLocation, createBrowserRouter, RouterProvider, Route, Link, Router, } from 'react-router-dom';
+import { useLocation, createBrowserRouter, RouterProvider, Route, Link, Router, useNavigate, } from 'react-router-dom';
 import { AnimatePresence, motion } from "framer-motion";
 import { navlinks } from "../constants/navlinks";
 import { socials } from "../constants/socials";
@@ -69,20 +69,35 @@ const Navigation = ({ setOpen }) => {
 
 
 const SidebarHeader = () => {
+    const [profile, setProfile] = useState(false);
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        if (!profile) {
+            navigate('/profile_pic')
+        }
+        else {
+            navigate(-1)
+        }
+
+        setProfile(!profile)
+    }
     return (
-        <Link to="/" className="flex space-x-2 py-8">
-            <img
+        <div className="flex space-x-2 py-8">
+            <img onClick={handleClick}
                 src="/sj.png"
                 alt="Avatar"
                 height="40"
                 width="40"
-                className="object-cover object-top rounded-full flex-shrink-0"
+                className="object-cover object-top rounded-full flex-shrink-0 cursor-move"
             />
-            <div className="flex text-sm flex-col">
-                <p className="font-bold text-primary">Sujeet Gupta</p>
-                <p className="font-light text-secondary">Developer</p>
-            </div>
-        </Link>
+            <Link to="/">
+                <div className="flex text-sm flex-col">
+                    <p className="font-bold text-primary">Sujeet Gupta</p>
+                    <p className="font-light text-secondary">Developer</p>
+                </div>
+            </Link>
+        </div>
     );
 };
 
@@ -108,7 +123,6 @@ const Navbar = () => {
                 >
                     <SidebarHeader />
                     <Navigation setOpen={setOpen} />
-                    {/* </div> */}
                     <Badge href="https://drive.google.com/file/d/18-SIERz2Oxk52rAbDzXJStBA4dJFVL1k/view?usp=sharing" text="Read Resume" />
                 </motion.div>)}
             </AnimatePresence>

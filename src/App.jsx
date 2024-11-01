@@ -7,6 +7,7 @@ import Projects from './pages/Projects'
 import Contributions from './pages/Contributions'
 import Articles from './pages/Articles'
 import SingleProject from './pages/SingleProject';
+import Profile from './pages/Profile';
 
 function App() {
 
@@ -38,10 +39,13 @@ function App() {
         {
           path: "/products/:slug",
           element: <SingleProject />
+        },
+        {
+          path: "/profile_pic",
+          element:<Profile/>
         }
       ],
     },
-    
   ])
 
   return (
