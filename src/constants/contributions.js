@@ -1,7 +1,7 @@
 export const contributions = [
   {
     index: 1,
-    title: "It started with, adding a frontend-landingPage in an open source Repo",
+    title: "It started with, adding a frontend-landingPage in an open-source Repo",
     org: "WebDev-OpenSource",
     status: "Merged",
     link: "https://github.com/rudra016/WebDev-OpenSource/pull/178"

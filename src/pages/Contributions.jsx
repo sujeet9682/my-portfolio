@@ -34,7 +34,7 @@ const Contributions = () => {
         >
           <Link
             key={contribution.index}
-            href={contribution.link}
+            to={contribution.link}
             target="_blank"
             className="relative my-10 block"
             onMouseEnter={() => setHovered(contribution.index)}

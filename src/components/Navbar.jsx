@@ -109,7 +109,7 @@ const Navbar = () => {
                     <SidebarHeader />
                     <Navigation setOpen={setOpen} />
                     {/* </div> */}
-                    <Badge href="#" text="Read Resume" />
+                    <Badge href="https://drive.google.com/file/d/18-SIERz2Oxk52rAbDzXJStBA4dJFVL1k/view?usp=sharing" text="Read Resume" />
                 </motion.div>)}
             </AnimatePresence>
 
