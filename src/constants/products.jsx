@@ -5,7 +5,7 @@ export const products = [
     title: "e-commerce store",
     description:
       "An Engaging E-commerce Frontend Built with HTML, CSS, and JavaScript, Featuring Local Storage",
-    thumbnail: "/public/commerce.png",
+    thumbnail: "/commerce.png",
     images: [
       "/public/commerce.png",
       // "/public/commerce.png",
@@ -40,7 +40,7 @@ export const products = [
     title: "clickart-frontend",
     description:
       "User Interface for a Men's Fashion E-commerce Website Using HTML, CSS, and JavaScript",
-    thumbnail: "/public/clickcart.jpg",
+    thumbnail: "/clickcart.jpg",
     images: [
       "/public/clickcart.jpg",
       // "/public/clickcart.jpg",
@@ -70,7 +70,7 @@ export const products = [
     title: "Spending Tracker",
     description:
       "Effortlessly Manage Your Expenditure with a Spending Tracker Application.",
-    thumbnail: "/public/spending.png",
+    thumbnail: "/spending.png",
     images: [
       "/public/spending.png",
       // "/public/spending.png",
