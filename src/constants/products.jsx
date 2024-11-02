@@ -7,8 +7,8 @@ export const products = [
       "An Engaging E-commerce Frontend Built with HTML, CSS, and JavaScript, Featuring Local Storage",
     thumbnail: "/commerce.png",
     images: [
-      "/public/commerce.png",
-      // "/public/commerce.png",
+      "/commerce.png",
+      // "/commerce.png",
     ],
     live: "https://clickmystore.netlify.app/",
     stack: ["JavaScript"],
@@ -42,8 +42,8 @@ export const products = [
       "User Interface for a Men's Fashion E-commerce Website Using HTML, CSS, and JavaScript",
     thumbnail: "/clickcart.jpg",
     images: [
-      "/public/clickcart.jpg",
-      // "/public/clickcart.jpg",
+      "/clickcart.jpg",
+      // "/clickcart.jpg",
     ],
     live:"https://liveclickcart.netlify.app/",
     stack: ["JavaScript", "HTML", "CSS"],
@@ -72,8 +72,8 @@ export const products = [
       "Effortlessly Manage Your Expenditure with a Spending Tracker Application.",
     thumbnail: "/spending.png",
     images: [
-      "/public/spending.png",
-      // "/public/spending.png",
+      "/spending.png",
+      // "/spending.png",
     ],
     live:"",
     stack: ["Java", "mysql"],
